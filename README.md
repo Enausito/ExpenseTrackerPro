@@ -1,4 +1,4 @@
-# Borrador-del-proyecto-de-la-aplicaci-n-de-Android
+# ExpenseTrackerPro
 Proyecto de la aplicación de android
 ExpenseTracker Pro
 Descripción del Proyecto
