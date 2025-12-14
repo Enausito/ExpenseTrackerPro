@@ -1,48 +1,39 @@
-ExpenseTracker Pro
-Descripción del Proyecto
-ExpenseTracker Pro es una aplicación Android sencilla y funcional para el seguimiento de gastos personales. Permite a los usuarios registrar transacciones, categorizar gastos y generar resúmenes gráficos para una mejor gestión financiera. Diseñada para ser fácil de usar, con énfasis en la simplicidad y accesibilidad. Actualización: Soporte para idiomas español e inglés.
-Exposición del Problema
-Muchas personas luchan con el control de sus finanzas debido a la falta de herramientas móviles intuitivas. Esta app resuelve eso ofreciendo un rastreo en tiempo real sin complejidades innecesarias, con énfasis en accesibilidad para dispositivos de gama baja.
-Plataforma
+# ExpenseTracker Pro
 
-Tecnologías: Android SDK, Kotlin, Room DB, Material Design, Coroutines para asincronía.
-Requisitos Mínimos: Android 8.0+.
+## Descripción del Proyecto
+ExpenseTracker Pro es una aplicación Android nativa diseñada para la gestión eficiente de finanzas personales. Su objetivo principal es ofrecer una herramienta accesible, ligera y funcional que permita a los usuarios registrar sus gastos diarios, categorizarlos y visualizarlos mediante un dashboard intuitivo. A diferencia de soluciones complejas, esta aplicación prioriza la simplicidad y el almacenamiento transparente de datos en texto plano.
 
-Interfaz de Usuario e Interfaz de Administrador
+## Exposición del Problema
+Muchas personas encuentran difícil mantener un control de sus finanzas debido a que las aplicaciones existentes son demasiado complejas, requieren conexión permanente a internet o consumen demasiados recursos. Existe una necesidad de una herramienta "offline-first", rápida y que funcione fluidamente en dispositivos de gama media/baja, permitiendo al usuario tener control total y legible de sus propios datos sin dependencias ocultas.
 
-UI de Usuario: Dashboard intuitivo con gráficos, formulario simple para agregar gastos, navegación fluida y gestos swipe-to-delete.
-UI de Admin: Acceso protegido para edición de categorías, exportación de datos y reportes.
+## Plataforma y Tecnologías
+* **Sistema Operativo:** Android (Min SDK 26 - Android 8.0+).
+* **Lenguaje:** Kotlin.
+* **Arquitectura:** MVVM (Model-View-ViewModel).
+* **Persistencia de Datos:** Sistema de archivos local (Lectura/Escritura en `.txt` plano) para máxima transparencia y portabilidad.
+* **UI:** Material Design con XML/ViewBinding.
+* **Asincronía:** Kotlin Coroutines.
 
-Funcionalidad
+## Interfaz de Usuario e Interfaz de Administrador
+* **UI de Usuario:** * Dashboard visual con resumen de gastos.
+    * Botón de acción flotante (FAB) para registro rápido.
+    * Listado de historial con funcionalidad "Swipe-to-delete" (deslizar para borrar).
+    * Soporte multi-idioma (Español/Inglés).
+* **UI de Administrador:** * Acceso diferenciado.
+    * Capacidad de exportar el archivo de registro `.txt` crudo.
+    * Gestión de categorías personalizadas.
 
-Registro y categorización de gastos.
-Análisis gráfico y filtros, incluyendo búsqueda avanzada por monto/notas.
-Alertas personalizadas.
-Funciones admin: Backups y ediciones globales.
+## Funcionalidad
+1.  **Registro:** Captura de monto, categoría, descripción y fecha.
+2.  **Persistencia:** Guardado automático en `gastos.txt` en el almacenamiento interno.
+3.  **Visualización:** Cálculo automático de totales y renderizado de lista.
+4.  **Admin:** Herramientas de depuración y visualización directa del archivo plano.
 
-Diseño (Wireframes o Esquemas de Página)
+## Diseño (Wireframes)
+* **Pantalla Principal:** Header con Total Gastado | Gráfico Circular | Lista de Últimos Movimientos.
+* **Pantalla Agregar:** Input Monto | Spinner Categoría | Input Nota | Botón Guardar.
+* **Pantalla Admin:** Visor de Logs | Botón Exportar TXT | Configuración de Límites.
 
-Dashboard: Resumen gráfico + lista reciente + botón agregar.
-Agregar Gasto: Formulario con campos básicos.
-Historial: Lista filtrable con búsqueda avanzada.
-Admin: Menú para ediciones y exportaciones.
-Presupuestos (Nuevo): Sliders para límites mensuales.
-
-Registro de Cambios (Changelog)
-
-v1.0 (Inicial): Estructura base.
-v1.1 (Módulo 3): Refinamientos en usabilidad.
-v1.2 (Módulo 4 - Actual): Agregados: Idiomas, gestos, búsqueda avanzada, pantalla de Presupuestos.
-v1.3 (Planeado): Integración Firebase.
-v2.0 (Final): Análisis predictivo y entrega completa.
-
-Instalación
-
-Clona el repositorio: git clone https://github.com/tu-usuario/ExpenseTrackerPro.git
-Abre en Android Studio.
-Compila y ejecuta en un emulador o dispositivo.
-
-Contribuciones
-Bienvenidas pull requests para mejoras. Por favor, sigue el código de conducta.
-Licencia
-MIT License. Ver archivo LICENSE para detalles.
+---
+**Versión:** 1.0.0
+**Desarrollado por:** [Enausito]
